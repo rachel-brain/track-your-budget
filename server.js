@@ -1,3 +1,4 @@
+// Access packages needed for the application
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
@@ -9,18 +10,23 @@ const app = express();
 
 app.use(logger("dev"));
 
+// Express middleware
 app.use(compression());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({
+  extended: true
+}));
 app.use(express.json());
 
 app.use(express.static("public"));
 
+// Connect to database
 mongoose.connect("mongodb://localhost/budget", {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useFindAndModify: false,
+  useUnifiedTopology: true
 });
 
-// routes
+// Required routes
 app.use(require("./routes/api.js"));
 
 app.listen(PORT, () => {
