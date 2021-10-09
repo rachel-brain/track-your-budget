@@ -17,6 +17,14 @@ I WANT to be able to track my withdrawals and deposits with or without a data/in
 SO THAT my account balance is always accurate when I am travelling
 ```
 
+## Usage
+Clink on the link to the PWA application deployed on Heroku:
+https://secure-ridge-86293.herokuapp.com/
+
+Whether online or offline, enter transactions (withdrawals and/or deposits) as required.
+
+If offline, the transactions should reload when connecting online again.  If this does not happen, go into the Dev Tools to the Application tab > Application > Storage > Clear Site Data and the data will be refreshed and will repopulate both the table and the chart. 
+
 ## Screenshots
 The deployed Budget Tracker on Heroku website (offline):
 ![Screenshot of the deployed Budget Tracker on Heroku website (offline) is shown.](./public/images/UI-offline-screenshot.JPG).
