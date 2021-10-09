@@ -18,10 +18,9 @@ SO THAT my account balance is always accurate when I am travelling
 ```
 
 ## Screenshots
+![Screenshot of the deployed Budget Tracker on Heroku website (offline) is shown.](./public/images/UI-offline-screenshot.JPG).
 
-
-
-
+![Screenshot of the deployed Budget Tracker on Heroku website (online) is shown.](./public/images/UI-online-screenshot.JPG).
 
 ## Deployed on Heroku URL
 https://secure-ridge-86293.herokuapp.com/
